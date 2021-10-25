@@ -1,0 +1,39 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/monolite/src",
+  "monorepo": true,
+  "root": "apps/monolite",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/monolite/tsconfig.app.json"
+  },
+  "projects": {
+    "monolite": {
+      "type": "application",
+      "root": "apps/monolite",
+      "entryFile": "main",
+      "sourceRoot": "apps/monolite/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/monolite/tsconfig.app.json"
+      }
+    },
+    "hybrid": {
+      "type": "application",
+      "root": "apps/hybrid",
+      "entryFile": "main",
+      "sourceRoot": "apps/hybrid/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/hybrid/tsconfig.app.json"
+      }
+    },
+    "microservice": {
+      "type": "application",
+      "root": "apps/microservice",
+      "entryFile": "main",
+      "sourceRoot": "apps/microservice/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/microservice/tsconfig.app.json"
+      }
+    }
+  }
+}

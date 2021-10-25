@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package CronDemo;
+
+service CronDemoService {
+    rpc echo (Id) returns (Id) {}
+  }
+  
+  message Id {
+    int32 id = 1;
+  }
